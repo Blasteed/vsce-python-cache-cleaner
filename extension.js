@@ -21,22 +21,16 @@ function activate(context) {
             targets = workspaceFolders.map(folder => folder.uri.fsPath);
         }
 
-        vscode.window.withProgress({
-            location: vscode.ProgressLocation.Notification,
-            title: "Cleaning cache directories...",
-            cancellable: false
-        }, async () => {
-            let totalDeleted = 0;
-            for (const targetPath of targets) {
-                totalDeleted += cleanCache(targetPath);
-            }
+        let totalDeleted = 0;
+        for (const targetPath of targets) {
+            totalDeleted += cleanCache(targetPath);
+        }
 
-            if (totalDeleted > 0) {
-                vscode.window.showInformationMessage(`Python cache cleaned successfully! Removed ${totalDeleted} folders.`);
-            } else {
-                vscode.window.showInformationMessage('No Python cache directories found.');
-            }
-        });
+        if (totalDeleted > 0) {
+            vscode.window.showInformationMessage(`Python cache cleaned successfully! Removed ${totalDeleted} folders.`);
+        } else {
+            vscode.window.showInformationMessage('No Python cache directories found.');
+        }
     });
 
     context.subscriptions.push(disposable);

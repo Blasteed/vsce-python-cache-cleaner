@@ -2,7 +2,7 @@
   "name": "python-cache-cleaner",
   "displayName": "Python Cache Cleaner",
   "description": "Recursively cleans up Python cache directories (__pycache__, .pytest_cache, .cache).",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "icon.png",
   "publisher": "karfee",
   "engines": {
