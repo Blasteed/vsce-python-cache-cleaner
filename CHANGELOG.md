@@ -1,9 +1,15 @@
-# Change Log
+# Changelog
 
-All notable changes to the "python-cache-cleaner" extension will be documented in this file.
+All notable changes to the "Python Cache Cleaner" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.0]
 
-## [Unreleased]
+- Initial release of Python Cache Cleaner.
+- Added recursive file-system wiping logic for `__pycache__`, `.pytest_cache`, and `.cache` folders.
+- Integrated Explorer Title Bar icon shortcut (`$(clear-all)`).
+- Integrated Folder Context Menu (right-click) entry point.
+- Added custom extension branding and icon.
 
-- Initial release
+## [1.0.1]
+
+- Updated this CHANGELOG.md file

@@ -40,5 +40,9 @@
         }
       ]
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Blasteed/vsce-python-cache-cleaner.git"
   }
 }
