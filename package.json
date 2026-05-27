@@ -1,0 +1,44 @@
+{
+  "name": "python-cache-cleaner",
+  "displayName": "Python Cache Cleaner",
+  "description": "Recursively cleans up Python cache directories (__pycache__, .pytest_cache, .cache).",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "publisher": "karfee",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "python-cache-cleaner.cleanCache",
+        "title": "Clear Python Cache",
+        "category": "Python Cache Cleaner",
+        "icon": "$(clear-all)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "python-cache-cleaner.cleanCache",
+          "group": "2_workspace",
+          "when": "explorerResourceIsFolder"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "python-cache-cleaner.cleanCache",
+          "group": "navigation",
+          "when": "view == workbench.explorer.fileView"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "proto_cache-cleaner",
+  "displayName": "JS Cache Cleaner",
+  "description": "Cancella le cartelle di cache del workspace con un click in JavaScript",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "proto_cache-cleaner.clean",
+        "title": "Svuota Cache Workspace"
+      }
+    ]
+  }
+}
