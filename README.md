@@ -36,12 +36,7 @@ This extension contributes the following user interface elements:
 
 ## Release Notes
 
-### 1.0.0
-
-* Initial release of Python Cache Cleaner.
-* Added recursive file-system wiping logic.
-* Added Explorer Title Bar and Context Menu entry points.
-* Integrated custom extension icon.
+See `CHANGELOG.md` file.
 
 ---
 
