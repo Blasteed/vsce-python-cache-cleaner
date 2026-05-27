@@ -12,4 +12,8 @@ All notable changes to the "Python Cache Cleaner" extension will be documented i
 
 ## [1.0.1]
 
-- Updated this CHANGELOG.md file
+- Updated this `CHANGELOG.md` file
+
+## [1.0.2]
+
+- Fixed `package.json` to increment versions. (I'll forgot it every time :P)
